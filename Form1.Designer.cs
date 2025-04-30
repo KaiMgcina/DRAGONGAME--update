@@ -52,7 +52,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             radioButton5 = new RadioButton();
             label4 = new Label();
             label1 = new Label();
-            StartButton = new Button();
+            button2 = new Button();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
@@ -336,18 +336,18 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             label1.TabIndex = 0;
             label1.Text = "Player Name :";
             // 
-            // StartButton
+            // button2
             // 
-            StartButton.BackColor = Color.White;
-            StartButton.FlatStyle = FlatStyle.Flat;
-            StartButton.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            StartButton.ForeColor = Color.Gold;
-            StartButton.Location = new Point(35, 421);
-            StartButton.Name = "StartButton";
-            StartButton.Size = new Size(858, 32);
-            StartButton.TabIndex = 7;
-            StartButton.Text = "Start Game";
-            StartButton.UseVisualStyleBackColor = false;
+            button2.BackColor = Color.White;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.Gold;
+            button2.Location = new Point(35, 421);
+            button2.Name = "button2";
+            button2.Size = new Size(858, 32);
+            button2.TabIndex = 7;
+            button2.Text = "Start Game";
+            button2.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -675,7 +675,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(StartButton);
+            Controls.Add(button2);
             Controls.Add(groupBox3);
             Controls.Add(groupBox1);
             Name = "Form1";
@@ -714,7 +714,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
         private Label label4;
         private Label label1;
         private Button button1;
-        private Button StartButton;
+        private Button button2;
         private TextBox textBox4;
         private TextBox textBox3;
         private Label label5;
