@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace DRAGONGAME_GAME_START_INTERFACE
 {
     public partial class Form1 : Form
@@ -8,11 +10,12 @@ namespace DRAGONGAME_GAME_START_INTERFACE
         public static string Player1DragName;
         public static string Player2DragName;
 
-        // player arrays for now till assigned
+
         public static string[] P1data;
         public static string[] P2data;
         public static int[] P1values;
         public static int[] P2values;
+
 
         // constant for dragons name and their individual stats
 
@@ -48,7 +51,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
 
 
 
-        
+
 
         Form2 F2 = new Form2();
         Form1 F1 = new Form1();
@@ -56,6 +59,9 @@ namespace DRAGONGAME_GAME_START_INTERFACE
         public Form1()
         {
             InitializeComponent();
+
+        
+    
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -104,6 +110,8 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             }
             //disable button after click
             buttonSave1.Enabled = false;
+
+            
         }
         //method to disable and enable start button
         public void enable()
@@ -137,6 +145,8 @@ namespace DRAGONGAME_GAME_START_INTERFACE
 
            
             //if statements to populate integer arrays depending on a raido button click
+          
+                
             if(radioButtonFire1.Checked)
                 P1values = (int[])radioButtonFire1.Tag;
             for (int i = 0; i < P1values.Length; i++)
@@ -165,6 +175,12 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             //disable button after click
             buttonSave2.Enabled = false;
         }
+
+        public void PassArrays(string[] P1data, string[] P2data, int[] P1values, int[] P2values)
+        { 
+        
+        }
+         
         //assignment of constants for dragon starts to player 1 radio butttons
 
         private void radioButtonFire1_CheckedChanged(object sender, EventArgs e)

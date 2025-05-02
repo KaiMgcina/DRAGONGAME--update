@@ -16,20 +16,24 @@ namespace DRAGONGAME_GAME_START_INTERFACE
         public static int player1;
         public static int player2;
 
-        
-        
+       
 
 
-      
+
+
 
 
         public Form2()
         {
             InitializeComponent();
             labelWhoStarts.Hide();
-            Form1.P1data.SetValue(Form1.Player1Name, 0);
-            Form1.P1data.SetValue(Form1.Player1DragName, 0);
-            
+            //attempt to pass array please fix if it is wrong kAI
+            Form1.P1data.SetValue(Form1.P1data, 2);
+            Form1.P2data.SetValue(Form1.P2data, 2);
+            Form1.P1values.SetValue(Form1.P1values, 4);
+            Form1.P2values.SetValue(Form1.P2values, 4);
+
+
         }
 
         //randomroll method to get a random number from 1-6
