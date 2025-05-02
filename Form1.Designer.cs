@@ -32,27 +32,27 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            groupBox1 = new GroupBox();
-            button3 = new Button();
-            groupBox2 = new GroupBox();
-            radioButton4 = new RadioButton();
-            radioButton3 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
-            groupBox3 = new GroupBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            button1 = new Button();
-            groupBox4 = new GroupBox();
-            radioButton8 = new RadioButton();
-            radioButton7 = new RadioButton();
-            radioButton6 = new RadioButton();
-            radioButton5 = new RadioButton();
+            textBoxP1name = new TextBox();
+            textBoxP1dname = new TextBox();
+            groupBoxP1 = new GroupBox();
+            buttonSave1 = new Button();
+            groupBoxP1drg = new GroupBox();
+            radioButtonEarth1 = new RadioButton();
+            radioButtonWind1 = new RadioButton();
+            radioButtonIce1 = new RadioButton();
+            radioButtonFire1 = new RadioButton();
+            groupBoxP2 = new GroupBox();
+            textBoxP2dname = new TextBox();
+            textBoxP2name = new TextBox();
+            buttonSave2 = new Button();
+            groupBoxP2drg = new GroupBox();
+            radioButtonEarth2 = new RadioButton();
+            radioButtonWind2 = new RadioButton();
+            radioButtonIce2 = new RadioButton();
+            radioButtonFire2 = new RadioButton();
             label4 = new Label();
             label1 = new Label();
-            button2 = new Button();
+            buttonStart = new Button();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
@@ -78,10 +78,10 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
-            groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox3.SuspendLayout();
-            groupBox4.SuspendLayout();
+            groupBoxP1.SuspendLayout();
+            groupBoxP1drg.SuspendLayout();
+            groupBoxP2.SuspendLayout();
+            groupBoxP2drg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -106,215 +106,224 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             label3.TabIndex = 2;
             label3.Text = "Dragon Name :";
             // 
-            // textBox1
+            // textBoxP1name
             // 
-            textBox1.Location = new Point(124, 44);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(173, 22);
-            textBox1.TabIndex = 3;
+            textBoxP1name.Location = new Point(124, 44);
+            textBoxP1name.Name = "textBoxP1name";
+            textBoxP1name.Size = new Size(173, 22);
+            textBoxP1name.TabIndex = 3;
             // 
-            // textBox2
+            // textBoxP1dname
             // 
-            textBox2.BackColor = SystemColors.ControlLightLight;
-            textBox2.Location = new Point(124, 78);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(173, 22);
-            textBox2.TabIndex = 4;
+            textBoxP1dname.BackColor = SystemColors.ControlLightLight;
+            textBoxP1dname.Location = new Point(124, 78);
+            textBoxP1dname.Name = "textBoxP1dname";
+            textBoxP1dname.Size = new Size(173, 22);
+            textBoxP1dname.TabIndex = 4;
             // 
-            // groupBox1
+            // groupBoxP1
             // 
-            groupBox1.BackColor = Color.Transparent;
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(groupBox2);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            groupBox1.ForeColor = Color.Gold;
-            groupBox1.Location = new Point(34, 30);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(397, 340);
-            groupBox1.TabIndex = 5;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Player 1";
+            groupBoxP1.BackColor = Color.Transparent;
+            groupBoxP1.Controls.Add(buttonSave1);
+            groupBoxP1.Controls.Add(groupBoxP1drg);
+            groupBoxP1.Controls.Add(textBoxP1dname);
+            groupBoxP1.Controls.Add(textBoxP1name);
+            groupBoxP1.Controls.Add(label3);
+            groupBoxP1.Controls.Add(label2);
+            groupBoxP1.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            groupBoxP1.ForeColor = Color.Gold;
+            groupBoxP1.Location = new Point(34, 30);
+            groupBoxP1.Name = "groupBoxP1";
+            groupBoxP1.Size = new Size(397, 340);
+            groupBoxP1.TabIndex = 5;
+            groupBoxP1.TabStop = false;
+            groupBoxP1.Text = "Player 1";
             // 
-            // button3
+            // buttonSave1
             // 
-            button3.BackColor = Color.White;
-            button3.FlatAppearance.BorderColor = Color.Black;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(8, 285);
-            button3.Margin = new Padding(0);
-            button3.Name = "button3";
-            button3.Size = new Size(352, 25);
-            button3.TabIndex = 6;
-            button3.Text = "Save";
-            button3.UseVisualStyleBackColor = false;
+            buttonSave1.BackColor = Color.White;
+            buttonSave1.FlatAppearance.BorderColor = Color.Black;
+            buttonSave1.FlatStyle = FlatStyle.Flat;
+            buttonSave1.Location = new Point(8, 285);
+            buttonSave1.Margin = new Padding(0);
+            buttonSave1.Name = "buttonSave1";
+            buttonSave1.Size = new Size(352, 25);
+            buttonSave1.TabIndex = 6;
+            buttonSave1.Text = "Save";
+            buttonSave1.UseVisualStyleBackColor = false;
+            buttonSave1.Click += buttonSave1_Click;
             // 
-            // groupBox2
+            // groupBoxP1drg
             // 
-            groupBox2.Controls.Add(radioButton4);
-            groupBox2.Controls.Add(radioButton3);
-            groupBox2.Controls.Add(radioButton2);
-            groupBox2.Controls.Add(radioButton1);
-            groupBox2.ForeColor = Color.Gold;
-            groupBox2.Location = new Point(8, 130);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(352, 149);
-            groupBox2.TabIndex = 5;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Dragon Type";
+            groupBoxP1drg.Controls.Add(radioButtonEarth1);
+            groupBoxP1drg.Controls.Add(radioButtonWind1);
+            groupBoxP1drg.Controls.Add(radioButtonIce1);
+            groupBoxP1drg.Controls.Add(radioButtonFire1);
+            groupBoxP1drg.ForeColor = Color.Gold;
+            groupBoxP1drg.Location = new Point(8, 130);
+            groupBoxP1drg.Name = "groupBoxP1drg";
+            groupBoxP1drg.Size = new Size(352, 149);
+            groupBoxP1drg.TabIndex = 5;
+            groupBoxP1drg.TabStop = false;
+            groupBoxP1drg.Text = "Dragon Type";
             // 
-            // radioButton4
+            // radioButtonEarth1
             // 
-            radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(16, 113);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(128, 19);
-            radioButton4.TabIndex = 3;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "Earth Dragon";
-            radioButton4.UseVisualStyleBackColor = true;
+            radioButtonEarth1.AutoSize = true;
+            radioButtonEarth1.Location = new Point(16, 113);
+            radioButtonEarth1.Name = "radioButtonEarth1";
+            radioButtonEarth1.Size = new Size(128, 19);
+            radioButtonEarth1.TabIndex = 3;
+            radioButtonEarth1.TabStop = true;
+            radioButtonEarth1.Text = "Earth Dragon";
+            radioButtonEarth1.UseVisualStyleBackColor = true;
+            radioButtonEarth1.CheckedChanged += radioButtonEarth1_CheckedChanged;
             // 
-            // radioButton3
+            // radioButtonWind1
             // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(16, 88);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(125, 19);
-            radioButton3.TabIndex = 2;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "Wind Dragon";
-            radioButton3.UseVisualStyleBackColor = true;
+            radioButtonWind1.AutoSize = true;
+            radioButtonWind1.Location = new Point(16, 88);
+            radioButtonWind1.Name = "radioButtonWind1";
+            radioButtonWind1.Size = new Size(125, 19);
+            radioButtonWind1.TabIndex = 2;
+            radioButtonWind1.TabStop = true;
+            radioButtonWind1.Text = "Wind Dragon";
+            radioButtonWind1.UseVisualStyleBackColor = true;
+            radioButtonWind1.CheckedChanged += radioButtonWind1_CheckedChanged;
             // 
-            // radioButton2
+            // radioButtonIce1
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(16, 63);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(107, 19);
-            radioButton2.TabIndex = 1;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Ice Dragon";
-            radioButton2.UseVisualStyleBackColor = true;
+            radioButtonIce1.AutoSize = true;
+            radioButtonIce1.Location = new Point(16, 63);
+            radioButtonIce1.Name = "radioButtonIce1";
+            radioButtonIce1.Size = new Size(107, 19);
+            radioButtonIce1.TabIndex = 1;
+            radioButtonIce1.TabStop = true;
+            radioButtonIce1.Text = "Ice Dragon";
+            radioButtonIce1.UseVisualStyleBackColor = true;
+            radioButtonIce1.CheckedChanged += radioButtonIce1_CheckedChanged;
             // 
-            // radioButton1
+            // radioButtonFire1
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(16, 38);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(116, 19);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Fire Dragon";
-            radioButton1.UseVisualStyleBackColor = true;
+            radioButtonFire1.AutoSize = true;
+            radioButtonFire1.Location = new Point(16, 38);
+            radioButtonFire1.Name = "radioButtonFire1";
+            radioButtonFire1.Size = new Size(116, 19);
+            radioButtonFire1.TabIndex = 0;
+            radioButtonFire1.TabStop = true;
+            radioButtonFire1.Text = "Fire Dragon";
+            radioButtonFire1.UseVisualStyleBackColor = true;
+            radioButtonFire1.CheckedChanged += radioButtonFire1_CheckedChanged;
             // 
-            // groupBox3
+            // groupBoxP2
             // 
-            groupBox3.BackColor = Color.Transparent;
-            groupBox3.Controls.Add(textBox4);
-            groupBox3.Controls.Add(textBox3);
-            groupBox3.Controls.Add(button1);
-            groupBox3.Controls.Add(groupBox4);
-            groupBox3.Controls.Add(label4);
-            groupBox3.Controls.Add(label1);
-            groupBox3.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            groupBox3.ForeColor = Color.Gold;
-            groupBox3.Location = new Point(478, 30);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(414, 340);
-            groupBox3.TabIndex = 6;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Player 2";
+            groupBoxP2.BackColor = Color.Transparent;
+            groupBoxP2.Controls.Add(textBoxP2dname);
+            groupBoxP2.Controls.Add(textBoxP2name);
+            groupBoxP2.Controls.Add(buttonSave2);
+            groupBoxP2.Controls.Add(groupBoxP2drg);
+            groupBoxP2.Controls.Add(label4);
+            groupBoxP2.Controls.Add(label1);
+            groupBoxP2.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            groupBoxP2.ForeColor = Color.Gold;
+            groupBoxP2.Location = new Point(478, 30);
+            groupBoxP2.Name = "groupBoxP2";
+            groupBoxP2.Size = new Size(414, 340);
+            groupBoxP2.TabIndex = 6;
+            groupBoxP2.TabStop = false;
+            groupBoxP2.Text = "Player 2";
             // 
-            // textBox4
+            // textBoxP2dname
             // 
-            textBox4.Location = new Point(139, 78);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(177, 22);
-            textBox4.TabIndex = 5;
+            textBoxP2dname.Location = new Point(139, 78);
+            textBoxP2dname.Name = "textBoxP2dname";
+            textBoxP2dname.Size = new Size(177, 22);
+            textBoxP2dname.TabIndex = 5;
             // 
-            // textBox3
+            // textBoxP2name
             // 
-            textBox3.Location = new Point(139, 44);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(177, 22);
-            textBox3.TabIndex = 4;
+            textBoxP2name.Location = new Point(139, 44);
+            textBoxP2name.Name = "textBoxP2name";
+            textBoxP2name.Size = new Size(177, 22);
+            textBoxP2name.TabIndex = 4;
             // 
-            // button1
+            // buttonSave2
             // 
-            button1.BackColor = Color.White;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(8, 287);
-            button1.Name = "button1";
-            button1.Size = new Size(375, 23);
-            button1.TabIndex = 3;
-            button1.Text = "Save";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            buttonSave2.BackColor = Color.White;
+            buttonSave2.FlatStyle = FlatStyle.Flat;
+            buttonSave2.Location = new Point(8, 287);
+            buttonSave2.Name = "buttonSave2";
+            buttonSave2.Size = new Size(375, 23);
+            buttonSave2.TabIndex = 3;
+            buttonSave2.Text = "Save";
+            buttonSave2.UseVisualStyleBackColor = false;
+            buttonSave2.Click += button1_Click;
             // 
-            // groupBox4
+            // groupBoxP2drg
             // 
-            groupBox4.Controls.Add(radioButton8);
-            groupBox4.Controls.Add(radioButton7);
-            groupBox4.Controls.Add(radioButton6);
-            groupBox4.Controls.Add(radioButton5);
-            groupBox4.ForeColor = Color.Gold;
-            groupBox4.Location = new Point(6, 130);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(377, 149);
-            groupBox4.TabIndex = 2;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "Dragon Type";
+            groupBoxP2drg.Controls.Add(radioButtonEarth2);
+            groupBoxP2drg.Controls.Add(radioButtonWind2);
+            groupBoxP2drg.Controls.Add(radioButtonIce2);
+            groupBoxP2drg.Controls.Add(radioButtonFire2);
+            groupBoxP2drg.ForeColor = Color.Gold;
+            groupBoxP2drg.Location = new Point(6, 130);
+            groupBoxP2drg.Name = "groupBoxP2drg";
+            groupBoxP2drg.Size = new Size(377, 149);
+            groupBoxP2drg.TabIndex = 2;
+            groupBoxP2drg.TabStop = false;
+            groupBoxP2drg.Text = "Dragon Type";
             // 
-            // radioButton8
+            // radioButtonEarth2
             // 
-            radioButton8.AutoSize = true;
-            radioButton8.ForeColor = Color.Gold;
-            radioButton8.Location = new Point(17, 113);
-            radioButton8.Name = "radioButton8";
-            radioButton8.Size = new Size(128, 19);
-            radioButton8.TabIndex = 3;
-            radioButton8.TabStop = true;
-            radioButton8.Text = "Earth Dragon";
-            radioButton8.UseVisualStyleBackColor = true;
+            radioButtonEarth2.AutoSize = true;
+            radioButtonEarth2.ForeColor = Color.Gold;
+            radioButtonEarth2.Location = new Point(17, 113);
+            radioButtonEarth2.Name = "radioButtonEarth2";
+            radioButtonEarth2.Size = new Size(128, 19);
+            radioButtonEarth2.TabIndex = 3;
+            radioButtonEarth2.TabStop = true;
+            radioButtonEarth2.Text = "Earth Dragon";
+            radioButtonEarth2.UseVisualStyleBackColor = true;
+            radioButtonEarth2.CheckedChanged += radioButtonEarth2_CheckedChanged;
             // 
-            // radioButton7
+            // radioButtonWind2
             // 
-            radioButton7.AutoSize = true;
-            radioButton7.ForeColor = Color.Gold;
-            radioButton7.Location = new Point(17, 88);
-            radioButton7.Name = "radioButton7";
-            radioButton7.Size = new Size(125, 19);
-            radioButton7.TabIndex = 2;
-            radioButton7.TabStop = true;
-            radioButton7.Text = "Wind Dragon";
-            radioButton7.UseVisualStyleBackColor = true;
+            radioButtonWind2.AutoSize = true;
+            radioButtonWind2.ForeColor = Color.Gold;
+            radioButtonWind2.Location = new Point(17, 88);
+            radioButtonWind2.Name = "radioButtonWind2";
+            radioButtonWind2.Size = new Size(125, 19);
+            radioButtonWind2.TabIndex = 2;
+            radioButtonWind2.TabStop = true;
+            radioButtonWind2.Text = "Wind Dragon";
+            radioButtonWind2.UseVisualStyleBackColor = true;
+            radioButtonWind2.CheckedChanged += radioButtonWind2_CheckedChanged;
             // 
-            // radioButton6
+            // radioButtonIce2
             // 
-            radioButton6.AutoSize = true;
-            radioButton6.ForeColor = Color.Gold;
-            radioButton6.Location = new Point(17, 63);
-            radioButton6.Name = "radioButton6";
-            radioButton6.Size = new Size(107, 19);
-            radioButton6.TabIndex = 1;
-            radioButton6.TabStop = true;
-            radioButton6.Text = "Ice Dragon";
-            radioButton6.UseVisualStyleBackColor = true;
+            radioButtonIce2.AutoSize = true;
+            radioButtonIce2.ForeColor = Color.Gold;
+            radioButtonIce2.Location = new Point(17, 63);
+            radioButtonIce2.Name = "radioButtonIce2";
+            radioButtonIce2.Size = new Size(107, 19);
+            radioButtonIce2.TabIndex = 1;
+            radioButtonIce2.TabStop = true;
+            radioButtonIce2.Text = "Ice Dragon";
+            radioButtonIce2.UseVisualStyleBackColor = true;
+            radioButtonIce2.CheckedChanged += radioButtonIce2_CheckedChanged;
             // 
-            // radioButton5
+            // radioButtonFire2
             // 
-            radioButton5.AutoSize = true;
-            radioButton5.ForeColor = Color.Gold;
-            radioButton5.Location = new Point(17, 38);
-            radioButton5.Name = "radioButton5";
-            radioButton5.Size = new Size(116, 19);
-            radioButton5.TabIndex = 0;
-            radioButton5.TabStop = true;
-            radioButton5.Text = "Fire Dragon";
-            radioButton5.UseVisualStyleBackColor = true;
+            radioButtonFire2.AutoSize = true;
+            radioButtonFire2.ForeColor = Color.Gold;
+            radioButtonFire2.Location = new Point(17, 38);
+            radioButtonFire2.Name = "radioButtonFire2";
+            radioButtonFire2.Size = new Size(116, 19);
+            radioButtonFire2.TabIndex = 0;
+            radioButtonFire2.TabStop = true;
+            radioButtonFire2.Text = "Fire Dragon";
+            radioButtonFire2.UseVisualStyleBackColor = true;
+            radioButtonFire2.CheckedChanged += radioButtonFire2_CheckedChanged;
             // 
             // label4
             // 
@@ -336,18 +345,19 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             label1.TabIndex = 0;
             label1.Text = "Player Name :";
             // 
-            // button2
+            // buttonStart
             // 
-            button2.BackColor = Color.White;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.Gold;
-            button2.Location = new Point(35, 421);
-            button2.Name = "button2";
-            button2.Size = new Size(858, 32);
-            button2.TabIndex = 7;
-            button2.Text = "Start Game";
-            button2.UseVisualStyleBackColor = false;
+            buttonStart.BackColor = Color.White;
+            buttonStart.FlatStyle = FlatStyle.Flat;
+            buttonStart.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            buttonStart.ForeColor = Color.Gold;
+            buttonStart.Location = new Point(35, 421);
+            buttonStart.Name = "buttonStart";
+            buttonStart.Size = new Size(858, 32);
+            buttonStart.TabIndex = 7;
+            buttonStart.Text = "Start Game";
+            buttonStart.UseVisualStyleBackColor = false;
+            buttonStart.Click += buttonStart_Click;
             // 
             // label5
             // 
@@ -606,7 +616,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(1184, 43);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(165, 99);
             pictureBox1.TabIndex = 29;
@@ -616,7 +626,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(1184, 146);
-            pictureBox2.Margin = new Padding(2, 2, 2, 2);
+            pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(165, 99);
             pictureBox2.TabIndex = 30;
@@ -626,7 +636,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(1184, 248);
-            pictureBox3.Margin = new Padding(2, 2, 2, 2);
+            pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(165, 99);
             pictureBox3.TabIndex = 31;
@@ -636,7 +646,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(1184, 351);
-            pictureBox4.Margin = new Padding(2, 2, 2, 2);
+            pictureBox4.Margin = new Padding(2);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(165, 99);
             pictureBox4.TabIndex = 32;
@@ -675,19 +685,19 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(button2);
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox1);
+            Controls.Add(buttonStart);
+            Controls.Add(groupBoxP2);
+            Controls.Add(groupBoxP1);
             Name = "Form1";
             Text = "GAME START INTERFACE";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
-            groupBox4.ResumeLayout(false);
-            groupBox4.PerformLayout();
+            groupBoxP1.ResumeLayout(false);
+            groupBoxP1.PerformLayout();
+            groupBoxP1drg.ResumeLayout(false);
+            groupBoxP1drg.PerformLayout();
+            groupBoxP2.ResumeLayout(false);
+            groupBoxP2.PerformLayout();
+            groupBoxP2drg.ResumeLayout(false);
+            groupBoxP2drg.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -704,19 +714,19 @@ namespace DRAGONGAME_GAME_START_INTERFACE
         #endregion
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private GroupBox groupBox1;
-        private Button button3;
-        private GroupBox groupBox2;
-        private GroupBox groupBox3;
-        private GroupBox groupBox4;
+        private TextBox textBoxP1name;
+        private TextBox textBoxP1dname;
+        private GroupBox groupBoxP1;
+        private Button buttonSave1;
+        private GroupBox groupBoxP1drg;
+        private GroupBox groupBoxP2;
+        private GroupBox groupBoxP2drg;
         private Label label4;
         private Label label1;
-        private Button button1;
-        private Button button2;
-        private TextBox textBox4;
-        private TextBox textBox3;
+        private Button buttonSave2;
+        private Button buttonStart;
+        private TextBox textBoxP2dname;
+        private TextBox textBoxP2name;
         private Label label5;
         private Label label6;
         private Label label7;
@@ -738,14 +748,14 @@ namespace DRAGONGAME_GAME_START_INTERFACE
         private Label label23;
         private Label label24;
         private Label label25;
-        private RadioButton radioButton4;
-        private RadioButton radioButton3;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
-        private RadioButton radioButton8;
-        private RadioButton radioButton7;
-        private RadioButton radioButton6;
-        private RadioButton radioButton5;
+        private RadioButton radioButtonEarth1;
+        private RadioButton radioButtonWind1;
+        private RadioButton radioButtonIce1;
+        private RadioButton radioButtonFire1;
+        private RadioButton radioButtonEarth2;
+        private RadioButton radioButtonWind2;
+        private RadioButton radioButtonIce2;
+        private RadioButton radioButtonFire2;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
