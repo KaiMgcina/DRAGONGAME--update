@@ -29,198 +29,197 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            groupBox1 = new GroupBox();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
-            label1 = new Label();
-            groupBox2 = new GroupBox();
-            label4 = new Label();
-            label3 = new Label();
+            groupBoxInTurn = new GroupBox();
+            buttonInTurnBLOCK = new Button();
+            buttonInTurnSPK = new Button();
+            buttonInTurnATK = new Button();
+            labelInTurnhp = new Label();
+            groupBoxWaiting = new GroupBox();
+            labelWaitingDnameandType = new Label();
+            labelWaitingHp = new Label();
             label2 = new Label();
-            groupBox3 = new GroupBox();
-            richTextBox1 = new RichTextBox();
-            groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox3.SuspendLayout();
+            groupBoxLogs = new GroupBox();
+            richTextBoxLogs = new RichTextBox();
+            labelWhoStarts = new Label();
+            groupBoxInTurn.SuspendLayout();
+            groupBoxWaiting.SuspendLayout();
+            groupBoxLogs.SuspendLayout();
             SuspendLayout();
             // 
-            // groupBox1
+            // groupBoxInTurn
             // 
-            groupBox1.BackColor = Color.Transparent;
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            groupBox1.ForeColor = Color.Gold;
-            groupBox1.Location = new Point(49, 48);
-            groupBox1.Margin = new Padding(4, 5, 4, 5);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4, 5, 4, 5);
-            groupBox1.Size = new Size(356, 442);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "{Player 1 Dragon Name}, Dragon Type";
+            groupBoxInTurn.BackColor = Color.Transparent;
+            groupBoxInTurn.Controls.Add(buttonInTurnBLOCK);
+            groupBoxInTurn.Controls.Add(buttonInTurnSPK);
+            groupBoxInTurn.Controls.Add(buttonInTurnATK);
+            groupBoxInTurn.Controls.Add(labelInTurnhp);
+            groupBoxInTurn.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            groupBoxInTurn.ForeColor = Color.Gold;
+            groupBoxInTurn.Location = new Point(34, 29);
+            groupBoxInTurn.Name = "groupBoxInTurn";
+            groupBoxInTurn.Size = new Size(249, 265);
+            groupBoxInTurn.TabIndex = 0;
+            groupBoxInTurn.TabStop = false;
+            groupBoxInTurn.Text = "{Player 1 Dragon Name}, Dragon Type";
             // 
-            // button3
+            // buttonInTurnBLOCK
             // 
-            button3.BackColor = Color.White;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(23, 328);
-            button3.Margin = new Padding(4, 5, 4, 5);
-            button3.Name = "button3";
-            button3.Size = new Size(297, 68);
-            button3.TabIndex = 3;
-            button3.Text = "Block";
-            button3.UseVisualStyleBackColor = false;
+            buttonInTurnBLOCK.BackColor = Color.White;
+            buttonInTurnBLOCK.FlatStyle = FlatStyle.Flat;
+            buttonInTurnBLOCK.Location = new Point(16, 197);
+            buttonInTurnBLOCK.Name = "buttonInTurnBLOCK";
+            buttonInTurnBLOCK.Size = new Size(208, 41);
+            buttonInTurnBLOCK.TabIndex = 3;
+            buttonInTurnBLOCK.Text = "Block";
+            buttonInTurnBLOCK.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // buttonInTurnSPK
             // 
-            button2.BackColor = Color.White;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(23, 243);
-            button2.Margin = new Padding(4, 5, 4, 5);
-            button2.Name = "button2";
-            button2.Size = new Size(297, 67);
-            button2.TabIndex = 2;
-            button2.Text = "Special Attack";
-            button2.UseVisualStyleBackColor = false;
+            buttonInTurnSPK.BackColor = Color.White;
+            buttonInTurnSPK.FlatStyle = FlatStyle.Flat;
+            buttonInTurnSPK.Location = new Point(16, 146);
+            buttonInTurnSPK.Name = "buttonInTurnSPK";
+            buttonInTurnSPK.Size = new Size(208, 40);
+            buttonInTurnSPK.TabIndex = 2;
+            buttonInTurnSPK.Text = "Special Attack";
+            buttonInTurnSPK.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // buttonInTurnATK
             // 
-            button1.BackColor = Color.White;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(23, 163);
-            button1.Margin = new Padding(4, 5, 4, 5);
-            button1.Name = "button1";
-            button1.Size = new Size(297, 65);
-            button1.TabIndex = 1;
-            button1.Text = "Attack";
-            button1.UseVisualStyleBackColor = false;
+            buttonInTurnATK.BackColor = Color.White;
+            buttonInTurnATK.FlatStyle = FlatStyle.Flat;
+            buttonInTurnATK.Location = new Point(16, 98);
+            buttonInTurnATK.Name = "buttonInTurnATK";
+            buttonInTurnATK.Size = new Size(208, 39);
+            buttonInTurnATK.TabIndex = 1;
+            buttonInTurnATK.Text = "Attack";
+            buttonInTurnATK.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // labelInTurnhp
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(23, 63);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(341, 30);
-            label1.TabIndex = 0;
-            label1.Text = "HP : {Dragon  choice HP}";
+            labelInTurnhp.AutoSize = true;
+            labelInTurnhp.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            labelInTurnhp.Location = new Point(16, 38);
+            labelInTurnhp.Name = "labelInTurnhp";
+            labelInTurnhp.Size = new Size(239, 20);
+            labelInTurnhp.TabIndex = 0;
+            labelInTurnhp.Text = "HP : {Dragon  choice HP}";
             // 
-            // groupBox2
+            // groupBoxWaiting
             // 
-            groupBox2.BackColor = Color.Transparent;
-            groupBox2.Controls.Add(label4);
-            groupBox2.Controls.Add(label3);
-            groupBox2.Controls.Add(label2);
-            groupBox2.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            groupBox2.ForeColor = Color.Gold;
-            groupBox2.Location = new Point(494, 212);
-            groupBox2.Margin = new Padding(4, 5, 4, 5);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(4, 5, 4, 5);
-            groupBox2.Size = new Size(623, 200);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Opponent : {Player 2 Name} ";
-            groupBox2.Enter += groupBox2_Enter;
+            groupBoxWaiting.BackColor = Color.Transparent;
+            groupBoxWaiting.Controls.Add(labelWaitingDnameandType);
+            groupBoxWaiting.Controls.Add(labelWaitingHp);
+            groupBoxWaiting.Controls.Add(label2);
+            groupBoxWaiting.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            groupBoxWaiting.ForeColor = Color.Gold;
+            groupBoxWaiting.Location = new Point(346, 127);
+            groupBoxWaiting.Name = "groupBoxWaiting";
+            groupBoxWaiting.Size = new Size(436, 120);
+            groupBoxWaiting.TabIndex = 1;
+            groupBoxWaiting.TabStop = false;
+            groupBoxWaiting.Text = "Opponent : {Player 2 Name} ";
+            groupBoxWaiting.Enter += groupBox2_Enter;
             // 
-            // label4
+            // labelWaitingDnameandType
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Showcard Gothic", 13F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.Location = new Point(23, 62);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(557, 33);
-            label4.TabIndex = 2;
-            label4.Text = "{Player 2 Dragon Name}, Dragon Type\r\n";
+            labelWaitingDnameandType.AutoSize = true;
+            labelWaitingDnameandType.Font = new Font("Showcard Gothic", 13F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            labelWaitingDnameandType.Location = new Point(16, 37);
+            labelWaitingDnameandType.Name = "labelWaitingDnameandType";
+            labelWaitingDnameandType.Size = new Size(400, 23);
+            labelWaitingDnameandType.TabIndex = 2;
+            labelWaitingDnameandType.Text = "{Player 2 Dragon Name}, Dragon Type\r\n";
             // 
-            // label3
+            // labelWaitingHp
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.Location = new Point(126, 112);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(335, 30);
-            label3.TabIndex = 1;
-            label3.Text = "HP : {Dragon choice HP}";
+            labelWaitingHp.AutoSize = true;
+            labelWaitingHp.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            labelWaitingHp.Location = new Point(88, 67);
+            labelWaitingHp.Name = "labelWaitingHp";
+            labelWaitingHp.Size = new Size(235, 20);
+            labelWaitingHp.TabIndex = 1;
+            labelWaitingHp.Text = "HP : {Dragon choice HP}";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            label2.Location = new Point(200, 65);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(140, 39);
             label2.Name = "label2";
-            label2.Size = new Size(0, 30);
+            label2.Size = new Size(0, 20);
             label2.TabIndex = 0;
             // 
-            // groupBox3
+            // groupBoxLogs
             // 
-            groupBox3.BackColor = Color.Transparent;
-            groupBox3.Controls.Add(richTextBox1);
-            groupBox3.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            groupBox3.ForeColor = Color.Gold;
-            groupBox3.Location = new Point(49, 542);
-            groupBox3.Margin = new Padding(4, 5, 4, 5);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Padding = new Padding(4, 5, 4, 5);
-            groupBox3.Size = new Size(1031, 378);
-            groupBox3.TabIndex = 2;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Battle Logs";
+            groupBoxLogs.BackColor = Color.Transparent;
+            groupBoxLogs.Controls.Add(richTextBoxLogs);
+            groupBoxLogs.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            groupBoxLogs.ForeColor = Color.Gold;
+            groupBoxLogs.Location = new Point(34, 325);
+            groupBoxLogs.Name = "groupBoxLogs";
+            groupBoxLogs.Size = new Size(722, 227);
+            groupBoxLogs.TabIndex = 2;
+            groupBoxLogs.TabStop = false;
+            groupBoxLogs.Text = "Battle Logs";
             // 
-            // richTextBox1
+            // richTextBoxLogs
             // 
-            richTextBox1.ForeColor = Color.Gold;
-            richTextBox1.Location = new Point(9, 37);
-            richTextBox1.Margin = new Padding(4, 5, 4, 5);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(995, 339);
-            richTextBox1.TabIndex = 0;
-            richTextBox1.Text = "Player 1 Turn :\n\n----------------------------------------------------\n\nPlayer 2 Turn :\n\n\n----------------------------------------------------\n\nPlayer 1 Turn:\n\n";
-            richTextBox1.TextChanged += richTextBox1_TextChanged;
+            richTextBoxLogs.ForeColor = Color.Gold;
+            richTextBoxLogs.Location = new Point(6, 22);
+            richTextBoxLogs.Name = "richTextBoxLogs";
+            richTextBoxLogs.Size = new Size(698, 205);
+            richTextBoxLogs.TabIndex = 0;
+            richTextBoxLogs.Text = "Player 1 Turn :\n\n----------------------------------------------------\n\nPlayer 2 Turn :\n\n\n----------------------------------------------------\n\nPlayer 1 Turn:\n\n";
+            richTextBoxLogs.TextChanged += richTextBox1_TextChanged;
+            // 
+            // labelWhoStarts
+            // 
+            labelWhoStarts.AutoSize = true;
+            labelWhoStarts.Location = new Point(526, 60);
+            labelWhoStarts.Name = "labelWhoStarts";
+            labelWhoStarts.Size = new Size(86, 15);
+            labelWhoStarts.TabIndex = 3;
+            labelWhoStarts.Text = "labelWhoStarts";
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.OrangeRed;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1663, 1012);
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
+            ClientSize = new Size(1164, 607);
+            Controls.Add(labelWhoStarts);
+            Controls.Add(groupBoxLogs);
+            Controls.Add(groupBoxWaiting);
+            Controls.Add(groupBoxInTurn);
             ForeColor = Color.Gold;
-            Margin = new Padding(4, 5, 4, 5);
             Name = "Form2";
             Text = "PLAYER TURN INTERFACE";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox3.ResumeLayout(false);
+            Load += Form2_Load;
+            groupBoxInTurn.ResumeLayout(false);
+            groupBoxInTurn.PerformLayout();
+            groupBoxWaiting.ResumeLayout(false);
+            groupBoxWaiting.PerformLayout();
+            groupBoxLogs.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private GroupBox groupBox2;
-        private GroupBox groupBox3;
-        private Label label1;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private Label label4;
-        private Label label3;
+        private GroupBox groupBoxInTurn;
+        private GroupBox groupBoxWaiting;
+        private GroupBox groupBoxLogs;
+        private Label labelInTurnhp;
+        private Button buttonInTurnBLOCK;
+        private Button buttonInTurnSPK;
+        private Button buttonInTurnATK;
+        private Label labelWaitingDnameandType;
+        private Label labelWaitingHp;
         private Label label2;
-        private RichTextBox richTextBox1;
+        private RichTextBox richTextBoxLogs;
+        private Label labelWhoStarts;
     }
 }

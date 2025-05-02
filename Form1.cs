@@ -63,15 +63,17 @@ namespace DRAGONGAME_GAME_START_INTERFACE
 
         }
 
+      
+
         //player 2 save button
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
 
             Player2Name = textBoxP2name.Text;
             Player2DragName = textBoxP2dname.Text;
             //population of arrays for strings
-            P1data.SetValue(Player2Name, 0);
-            P1data.SetValue(Player2DragName, 1);
+            P2data.SetValue(Player2Name, 0);
+            P2data.SetValue(Player2DragName, 1);
 
 
             //if statements to populate integer arrays depending on a raido button click
