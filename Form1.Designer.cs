@@ -29,22 +29,23 @@ namespace DRAGONGAME_GAME_START_INTERFACE
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
             groupBox1 = new GroupBox();
-            button3 = new Button();
+            button1 = new Button();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
             groupBox2 = new GroupBox();
             radioButton4 = new RadioButton();
             radioButton3 = new RadioButton();
             radioButton2 = new RadioButton();
             radioButton1 = new RadioButton();
             groupBox3 = new GroupBox();
+            button3 = new Button();
             textBox4 = new TextBox();
             textBox3 = new TextBox();
-            button1 = new Button();
             groupBox4 = new GroupBox();
             radioButton8 = new RadioButton();
             radioButton7 = new RadioButton();
@@ -78,6 +79,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
+            contextMenuStrip1 = new ContextMenuStrip(components);
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -108,30 +110,13 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             label3.TabIndex = 2;
             label3.Text = "Dragon Name :";
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(177, 73);
-            textBox1.Margin = new Padding(4, 5, 4, 5);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(245, 30);
-            textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            textBox2.BackColor = SystemColors.ControlLightLight;
-            textBox2.Location = new Point(177, 130);
-            textBox2.Margin = new Padding(4, 5, 4, 5);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(245, 30);
-            textBox2.TabIndex = 4;
-            // 
             // groupBox1
             // 
             groupBox1.BackColor = Color.Transparent;
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(groupBox2);
+            groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(groupBox2);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -145,18 +130,29 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             groupBox1.TabStop = false;
             groupBox1.Text = "Player 1";
             // 
-            // button3
+            // button1
             // 
-            button3.BackColor = Color.White;
-            button3.FlatAppearance.BorderColor = Color.Black;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(11, 475);
-            button3.Margin = new Padding(0);
-            button3.Name = "button3";
-            button3.Size = new Size(503, 42);
-            button3.TabIndex = 6;
-            button3.Text = "Save";
-            button3.UseVisualStyleBackColor = false;
+            button1.Location = new Point(34, 510);
+            button1.Name = "button1";
+            button1.Size = new Size(469, 34);
+            button1.TabIndex = 9;
+            button1.Text = "SAVE";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(176, 120);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(213, 30);
+            textBox2.TabIndex = 8;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(179, 66);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(210, 30);
+            textBox1.TabIndex = 7;
             // 
             // groupBox2
             // 
@@ -185,6 +181,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             radioButton4.TabStop = true;
             radioButton4.Text = "Earth Dragon";
             radioButton4.UseVisualStyleBackColor = true;
+            radioButton4.CheckedChanged += radioButton4_CheckedChanged;
             // 
             // radioButton3
             // 
@@ -197,6 +194,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             radioButton3.TabStop = true;
             radioButton3.Text = "Wind Dragon";
             radioButton3.UseVisualStyleBackColor = true;
+            radioButton3.CheckedChanged += radioButton3_CheckedChanged;
             // 
             // radioButton2
             // 
@@ -209,6 +207,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             radioButton2.TabStop = true;
             radioButton2.Text = "Ice Dragon";
             radioButton2.UseVisualStyleBackColor = true;
+            radioButton2.CheckedChanged += radioButton2_CheckedChanged;
             // 
             // radioButton1
             // 
@@ -221,13 +220,14 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             radioButton1.TabStop = true;
             radioButton1.Text = "Fire Dragon";
             radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
             // 
             // groupBox3
             // 
             groupBox3.BackColor = Color.Transparent;
+            groupBox3.Controls.Add(button3);
             groupBox3.Controls.Add(textBox4);
             groupBox3.Controls.Add(textBox3);
-            groupBox3.Controls.Add(button1);
             groupBox3.Controls.Add(groupBox4);
             groupBox3.Controls.Add(label4);
             groupBox3.Controls.Add(label1);
@@ -242,34 +242,29 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             groupBox3.TabStop = false;
             groupBox3.Text = "Player 2";
             // 
+            // button3
+            // 
+            button3.Location = new Point(29, 514);
+            button3.Name = "button3";
+            button3.Size = new Size(519, 34);
+            button3.TabIndex = 6;
+            button3.Text = "SAVE";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click_1;
+            // 
             // textBox4
             // 
-            textBox4.Location = new Point(199, 130);
-            textBox4.Margin = new Padding(4, 5, 4, 5);
+            textBox4.Location = new Point(192, 120);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(251, 30);
+            textBox4.Size = new Size(195, 30);
             textBox4.TabIndex = 5;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(199, 73);
-            textBox3.Margin = new Padding(4, 5, 4, 5);
+            textBox3.Location = new Point(192, 66);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(251, 30);
+            textBox3.Size = new Size(195, 30);
             textBox3.TabIndex = 4;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.White;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(11, 478);
-            button1.Margin = new Padding(4, 5, 4, 5);
-            button1.Name = "button1";
-            button1.Size = new Size(536, 38);
-            button1.TabIndex = 3;
-            button1.Text = "Save";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // groupBox4
             // 
@@ -299,6 +294,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             radioButton8.TabStop = true;
             radioButton8.Text = "Earth Dragon";
             radioButton8.UseVisualStyleBackColor = true;
+            radioButton8.CheckedChanged += radioButton8_CheckedChanged;
             // 
             // radioButton7
             // 
@@ -312,6 +308,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             radioButton7.TabStop = true;
             radioButton7.Text = "Wind Dragon";
             radioButton7.UseVisualStyleBackColor = true;
+            radioButton7.CheckedChanged += radioButton7_CheckedChanged;
             // 
             // radioButton6
             // 
@@ -325,6 +322,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             radioButton6.TabStop = true;
             radioButton6.Text = "Ice Dragon";
             radioButton6.UseVisualStyleBackColor = true;
+            radioButton6.CheckedChanged += radioButton6_CheckedChanged;
             // 
             // radioButton5
             // 
@@ -338,6 +336,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             radioButton5.TabStop = true;
             radioButton5.Text = "Fire Dragon";
             radioButton5.UseVisualStyleBackColor = true;
+            radioButton5.CheckedChanged += radioButton5_CheckedChanged;
             // 
             // label4
             // 
@@ -374,6 +373,7 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             button2.TabIndex = 7;
             button2.Text = "Start Game";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // label5
             // 
@@ -685,6 +685,12 @@ namespace DRAGONGAME_GAME_START_INTERFACE
             pictureBox4.TabIndex = 32;
             pictureBox4.TabStop = false;
             // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.ImageScalingSize = new Size(24, 24);
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -748,19 +754,13 @@ namespace DRAGONGAME_GAME_START_INTERFACE
         #endregion
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
         private GroupBox groupBox1;
-        private Button button3;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
         private GroupBox groupBox4;
         private Label label4;
         private Label label1;
-        private Button button1;
         private Button button2;
-        private TextBox textBox4;
-        private TextBox textBox3;
         private Label label5;
         private Label label6;
         private Label label7;
@@ -794,5 +794,12 @@ namespace DRAGONGAME_GAME_START_INTERFACE
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
+        private ContextMenuStrip contextMenuStrip1;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private TextBox textBox4;
+        private TextBox textBox3;
+        private Button button1;
+        private Button button3;
     }
 }

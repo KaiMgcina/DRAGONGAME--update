@@ -13,3 +13,8 @@ https://youtu.be/tgS5ONGEthE?si=xAYyGpBbTrU71-TA
 GitHub
 https://github.com/PAVONIS9999/DRAGONGAME-
 https://github.com/KaiMgcina/DRAGONGAME--update
+Random number int 
+https://www.tutorialsteacher.com/articles/generate-random-numbers-in-csharp
+ for switching players
+ https://stackoverflow.com/questions
+ github not working

@@ -9,10 +9,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Include="C:\Users\lab_services_student\OneDrive - ADvTECH Ltd\Documents\PROJECT 1 GAME DEV FORMS\START GAME FORM 1.cs" Link="START GAME FORM 1.cs" />
-  </ItemGroup>
-
+ 
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
